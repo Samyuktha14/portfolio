@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3de1be1c.css",
+    "main.js": "/portfolio/static/js/main.e177db73.js",
+    "static/media/SAMYUKTHA Resume.pdf": "/portfolio/static/media/SAMYUKTHA Resume.3b75ba8d374b9aecfc9d.pdf",
+    "static/media/book.png": "/portfolio/static/media/book.69fa59754c4f3c62e5ed.png",
+    "static/media/sam.jpg": "/portfolio/static/media/sam.ff4a14429a336b6a5edd.jpg",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.bfcea2223d3d373ff1c7.png",
+    "static/media/dbp.png": "/portfolio/static/media/dbp.f25a1b2e8bc0cfda59d9.png",
+    "index.html": "/portfolio/index.html",
+    "main.3de1be1c.css.map": "/portfolio/static/css/main.3de1be1c.css.map",
+    "main.e177db73.js.map": "/portfolio/static/js/main.e177db73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3de1be1c.css",
+    "static/js/main.e177db73.js"
+  ]
+}
