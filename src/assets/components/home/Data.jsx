@@ -1,16 +1,15 @@
-import React from 'react'
 
 const Data = () => {
   return (
     <div className='home__data'>
-        <h1 className="home__title">Samyuktha
+        <h1 className="home__title">Samyuktha 
         <svg
                   width="36"
                   height="36"
                   viewBox="0 0 48 48"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="home__hand"
+                  className="home__hand"
                 >
                   <path
                     d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
@@ -54,14 +53,14 @@ const Data = () => {
                   ></path>
                 </svg>
         </h1>
-        <h3 className="home__subtitle">UG Student</h3> 
-        <p className="home__description">Welcome to my portfolio! I am a Computer Science student passionate about coding, algorithms, and technology. This portfolio showcases my projects and skills in  software development, machine learning, and data science. Explore my work and join me on my journey of learning and innovation.
+        <h3 className="home__subtitle">B.E. Computer Science Graduate</h3> 
+        <p className="home__description">Welcome to my portfolio! I am a B.E. Computer Science graduate passionate about software development and building scalable web applications.Explore my work and connect with me to collaborate or learn more about my journey as a developer.
         </p>
 
         <a href="#contact" className="button button--flex">
             say Hello
             <svg
-                  class="button__icon"
+                  className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

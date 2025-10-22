@@ -1,9 +1,8 @@
 import React from 'react'
 import './about.css';
-import sam from "../../../assets/sam.jpg"
-import Resume from "../../../assets/SAMYUKTHA Resume.pdf";
-import Informaion from './Informaion';
-
+import Resume from "../../../assets/SAMYUKTHA J.pdf";
+import Informaion from './Information';
+import ProfileImg from '../../images/sam.jpg';
 
 const About = () => {
   return (
@@ -12,7 +11,7 @@ const About = () => {
         <span className="section__subtitle">My Introduction</span>
 
         <div className="about__container container grid">
-            <img src={sam} alt="" translateX='90' className="about__img" />
+           <img src={ProfileImg} alt=""className="about__img" />
 
             <div className="data">
                 <Informaion/>
@@ -22,7 +21,7 @@ to a team and drive organizational success</p>
                 <a download=""href={Resume} className="button button--flex">
                 Download CV 
                 <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -54,4 +53,4 @@ to a team and drive organizational success</p>
   )
 }
 
-export default About
+export default About;

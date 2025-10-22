@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { projectsData } from './Data';
-import { projectsNav } from './Data';
+import { projectsData, projectsNav } from './Data';
 import ProjectItems from './ProjectItems';
 
 const Projects = () => {
@@ -12,10 +11,11 @@ const Projects = () => {
     if (item.name === 'all') {
       setFilteredProjects(projectsData);
     } else {
-      const newProjects = projectsData.filter((project) => {
-        return project.category.toLowerCase() === item.name;
-      });
-      setFilteredProjects(newProjects);
+      setFilteredProjects(
+        projectsData.filter(
+          (project) => project.category.toLowerCase() === item.name
+        )
+      );
     }
   }, [item]);
 

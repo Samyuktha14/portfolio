@@ -1,129 +1,151 @@
-.header{
+/*================ HEADER =================*/
+.header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--container-color);
+    transition: 0.3s;
 }
 
-.nav{
-    /*height: calc(var(--header-height)+2.5rem);*/
-    height:4rem;
+/* Scroll effect */
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+/*================ NAVBAR =================*/
+.nav {
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    
 }
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle {
     color: var(--title-color);
-    font-weight:var(--font-medium);
+    font-weight: var(--font-medium);
+    cursor: pointer;
 }
 
-.nav__list{
+/* ================= LOGO TEXT STYLING ================= */
+.nav__logo {
+    font-size: 1.8rem;       /* bigger size */
+    font-weight: 700;         /* bold */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--title-color);
+    transition: 0.3s;
+}
+
+.nav__logo:hover {
+    color: var(--title-color-dark); /* hover effect */
+}
+
+.nav__list {
     display: flex;
     column-gap: 2rem;
 }
 
-.nav__link{
+.nav__link {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
-    transition: .3s;
+    transition: 0.3s;
 }
 
-.nav__icon,
-.nav__close,
-.nav__toggle{
-    display: none;
-}
-
-/*   Active Link*/
-.active-link,
-.nav__link:hover{
+.nav__link:hover,
+.active-link {
     color: var(--title-color-dark);
 }
 
-/* change background header */
-.scroll-header{
-    box-shadow: 0 -1px rgba(0,0,0,0.15);
+/* Icons & menu toggle */
+.nav__icon,
+.nav__close,
+.nav__toggle {
+    display: none;
 }
 
-/*====================================BREAKPOINTS=========================================*/
-/* For medium devices */
+/*================ MEDIA QUERIES =================*/
+/* Medium devices */
 @media screen and (max-width: 768px) {
-    .header{
-        top: initial;
+    .header {
         bottom: 0;
+        top: initial;
     }
 
-    .nav{
+    .nav {
         height: var(--header-height);
     }
 
-    .nav__menu{
+    .nav__menu {
         position: fixed;
-        bottom:-100%;
+        bottom: -100%;
         left: 0;
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
-        border-radius:1.5rem 1.5rem 0 0;
-        transition: .3s;
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
     }
 
-    /*show menu*/
-    .show-menu{
+    /* Show menu */
+    .show-menu {
         bottom: 0;
     }
-    .nav__list{
+
+    .nav__list {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-    
-    .nav__icon{
-        font-size:1.2rem;
-    }
 
-    .nav__close{
+    .nav__close {
         position: absolute;
         right: 1.3rem;
-        bottom: .5rem;
+        bottom: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;
         color: var(--title-color);
     }
 
-    .nav__close:hover{
+    .nav__close:hover {
         color: var(--title-color-dark);
-    }
-
-    .nav__toggle{
-        font-size: 1.1rem;
-        cursor: pointer;
     }
 
     .nav__icon,
     .nav__close,
-    .nav__toggle{
+    .nav__toggle {
         display: block;
+    }
+
+    .nav__toggle {
+        font-size: 1.2rem;
+    }
+
+    /* Make logo smaller on medium devices */
+    .nav__logo {
+        font-size: 1.5rem;
     }
 }
 
-/* For small devices */
+/* Small devices */
 @media screen and (max-width: 350px) {
-    .nav___menu{
+    .nav__menu {
         padding: 2rem 0.25rem 4rem;
     }
-    .nav__list{
+    .nav__list {
         column-gap: 0;
+    }
+
+    /* Further adjust logo for very small screens */
+    .nav__logo {
+        font-size: 1.3rem;
     }
 }
