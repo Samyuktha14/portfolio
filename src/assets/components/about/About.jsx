@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css';
-import Resume from "../../../assets/Samyuktha_J_Developer.pdf"
+
 import Informaion from './Information';
 import ProfileImg from '../../images/sam.jpg';
 
